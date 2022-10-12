@@ -16,4 +16,5 @@
 test {
     maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
     forkEvery = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+    useJUnitPlatform()
 }

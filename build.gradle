@@ -34,6 +34,7 @@ apply plugin: 'java-library'
 apply plugin: 'maven'
 apply plugin: 'java-test-fixtures'
 apply plugin: 'io.freefair.lombok'
+apply plugin: "jacoco"
 
 group = 'br.com.armange'
 //generateLombokConfig.enabled  = false
@@ -50,3 +51,4 @@ apply from: "$rootDir/gradle/jar.gradle"
 apply from: "$rootDir/gradle/publishing.gradle"
 apply from: "$rootDir/gradle/maven.central.gradle"
 apply from: "$rootDir/gradle/test.gradle"
+apply from: "$rootDir/gradle/jacoco.gradle"
