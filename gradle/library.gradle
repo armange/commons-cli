@@ -1,0 +1,35 @@
+/*
+ * Copyright [2022] [Diego Armange Costa]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * */
+def
+        ORG_MOCKITO = '3.9.0',
+        ORG_JUNIT_JUPITER = '5.6.2',
+        ORG_SLF4J = '1.7.32',
+        ORG_LOG4J = '2.17.1'
+
+ext.library = [
+    org_junit_jupiter_junit_jupiter_api: "org.junit.jupiter:junit-jupiter-api:${ORG_JUNIT_JUPITER}",
+    org_junit_jupiter_junit_jupiter_engine: "org.junit.jupiter:junit-jupiter-engine:${ORG_JUNIT_JUPITER}",
+
+    org_mockito_mockito_junit_jupiter: "org.mockito:mockito-junit-jupiter:${ORG_MOCKITO}",
+    org_mockito_mockito_core: "org.mockito:mockito-core:${ORG_MOCKITO}",
+
+    org_hamcrest_hamcrest_core: "org.hamcrest:hamcrest-core:2.2",
+    org_hamcrest_hamcrest_all: "org.hamcrest:hamcrest-all:1.3",
+
+    org_slf4j_slf4j_api: "org.slf4j:slf4j-api:${ORG_SLF4J}",
+    org_slf4j_slf4j_simple: "org.slf4j:slf4j-simple:${ORG_SLF4J}",
+    org_apache_logging_log4j_log4j_core: "org.apache.logging.log4j:log4j-core:${ORG_LOG4J}"
+]
